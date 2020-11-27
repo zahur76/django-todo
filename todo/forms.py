@@ -1,6 +1,6 @@
 from django import forms
-# Import database we are storing infomation
-# We need  to know what database to populate
+# Import database we are storing information
+# We need  to know what fields are required in form
 from .models import Item
 
 
