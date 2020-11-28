@@ -26,7 +26,7 @@ SECRET_KEY = '**#^cckd#npjvw^-wx!(%7qa*tdqux(8!c6j4qq%f#xj3q07g_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://zahur-todo-app.herokuapp.com/']
 
 
 # Application definition
