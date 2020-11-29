@@ -16,6 +16,7 @@ import dj_database_url
 if os.path.exists("env.py"):
     import env
 
+# Development will be set to its value or default value of False
 development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,6 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# Must set to true in gitpod
 DEBUG = development
 
 if development:
