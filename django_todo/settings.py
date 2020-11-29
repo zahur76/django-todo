@@ -30,9 +30,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# Must set to true in gitpod
+# Must set to true in env.py for development environment
 DEBUG = development
 
+# equivalent to: os.environ.get('DEVELOPMENT') == True
 if development:
     ALLOWED_HOSTS = ['localhost']
 else:
@@ -85,6 +86,8 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# if development is True
+# equivalent to: os.environ.get('DEVELOPMENT') == True
 if development:
     DATABASES = {
         'default': {
